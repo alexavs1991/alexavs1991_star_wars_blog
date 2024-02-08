@@ -22,6 +22,11 @@ const injectContext = PassedComponent => {
 		);
 
 		useEffect(() => {
+			state.actions.getAllInfo("people", "characters");
+			state.actions.getAllInfo("vehicles", "vehicles");
+			state.actions.getAllInfo("planets", "planets");
+			
+			
 			/**
 			 * EDIT THIS!
 			 * This function is the equivalent to "window.onLoad", it only runs once on the entire application lifetime
